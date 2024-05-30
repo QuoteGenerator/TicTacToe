@@ -1,0 +1,44 @@
+body, html{
+    background-color: black;
+    margin: 0px;
+    inset: 0px;
+
+    width:100%;
+    height:100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column ;
+}
+
+.Grid{
+    background-color: darkgray;
+
+    grid-template-columns: repeat(3, 8em);
+    grid-template-rows: repeat(3, 8em);
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+}
+
+#Block1, #Block2, #Block3, #Block4, #Block5, #Block6, #Block7, #Block8, #Block9{
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Block1:hover, #Block2:hover, 
+#Block3:hover, #Block4:hover, 
+#Block5:hover, #Block6:hover, 
+#Block7:hover, #Block8:hover, #Block9:hover{
+    background:lightgray;
+    cursor:pointer
+}
+
+h1{
+    color: wheat;
+    font-size: 5em;
+}
